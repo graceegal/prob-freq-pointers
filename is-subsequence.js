@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * inputs: two strings, s1 & s2
  * output: true/false

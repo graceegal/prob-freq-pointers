@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * input: 2 positive numbers
  * output: true/false
@@ -15,9 +17,11 @@ sameFrequency(22, 222);    // false
  */
 function sameFrequency(num1, num2) {
   //create frequency counter for input 1
-  const num1Counts = createFrequencyCounter(`${num1}`);
+  const num1Counts = createFrequencyCounter(num1.toString());
   //create frequency counter for input 2
-  const num2Counts = createFrequencyCounter(`${num2}`);
+  const num2Counts = createFrequencyCounter(num2.toString());
+
+  // TODO: can add a fast failure here (if input lengths are different return false)
   //loop through counter1,
   for (let digit in num1Counts) {
     //if counter1's value !== counter2's value, return false

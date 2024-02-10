@@ -29,8 +29,7 @@ function averagePair(nums, targetAvg) {
     const avg = (nums[left] + nums[right]) / 2;
 
     if (avg === targetAvg) return true;
-
-    if (avg < targetAvg) left++;
+    else if (avg < targetAvg) left++;
     else right--;
   }
 

@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * inputs: two possibly-different length arrays
  * outputs: object
@@ -24,6 +26,9 @@ function twoArrayObject(keys, values) {
   for (let i = 0; i < keys.length; i++) {
     //if i > values.length-1, object[keys[i]] = null
     //else set object[keys[i]] = values[i]
+
+    // TODO: this could be a good place to add a ternary to decide what the
+    // value should be when assigning (ie: from input values arr or null)
     if (i > values.length-1) arrayObject[keys[i]] = null;
     else arrayObject[keys[i]] = values[i];
   }

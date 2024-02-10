@@ -1,4 +1,4 @@
-// add whatever parameters you deem necessary & write docstring
+'use strict';
 
 /**
  * inputs: nums (array of numbers), targetAvg (number)
@@ -11,6 +11,10 @@
  * averagePair([1, 2, 3], 2);           // true
  * averagePair([], 4);                  // false
  */
+
+/**Takes in sorted array of numbers and targetAvg value. Checks if there is a pair
+ * of numbers whose average equals targetAvg. Returns true or false.
+  */
 
 function averagePair(nums, targetAvg) {
   //declare index variables (left=0, right=nums.length-1)

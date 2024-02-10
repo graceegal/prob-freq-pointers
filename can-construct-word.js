@@ -1,4 +1,4 @@
-// add whatever parameters you deem necessary & write doc comment
+'use strict'
 
 /**
  input: word, letters (both strings)
@@ -14,6 +14,10 @@ canConstructWord('abc', 'dcba');
 
 canConstructWord('aabb', 'bcabad');
   // true -- can build "aabbcc" with those letters
+ */
+
+/** Takes strings, word and letters, and checks if word can be constructed from
+ * characters in letters. Returns true or false.
  */
 function canConstructWord(word, letters) {
   //create freq counter for word
@@ -31,6 +35,9 @@ function canConstructWord(word, letters) {
 
   return true;
 }
+
+//TODO: docstring
+//TODO: parameter more general (items)
 
 function createFrequencyCounter(str) {
   const letterCounts = {};
